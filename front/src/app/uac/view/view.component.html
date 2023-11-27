@@ -1,0 +1,29 @@
+<div id="main-container">
+    <div class="view-box">
+        <div class="viewUser" >
+            <p>Hello {{viewUsername}} !</p>
+        </div>
+        <br>
+        <div>
+            <button class="button" type="button" (click)="changePassword()">Schimbare parola</button>
+        </div>
+        <br>
+        <div>
+            <button class="button" type="button" (click)="deleteAccount()">Stergere cont</button>
+        </div>
+        <br>
+        <div>
+            <button class="button" type="button" (click)="disconnect()">Deconectare</button>
+        </div>
+        <br>
+
+        <div *ngIf = "viewUserDoesNotExists">
+            User doesn't exists!
+        </div>
+        <br>
+
+        <div *ngIf = "deleteUserDoesNotExists">
+            User doesn't exists!
+        </div>  
+    </div>
+</div>

@@ -1,0 +1,38 @@
+#main-container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#password{
+    width: 300px;
+    height: 30px;
+    border-radius: 8px; 
+    text-align: center;
+}
+
+#repassword{
+    width: 300px;
+    height: 30px;
+    border-radius: 8px; 
+    text-align: center;
+}
+
+.button {
+    background-color:#E88EED;
+    border-radius: 25px; 
+    color:white;
+    height: 30px;
+    width: 140px;
+}

@@ -1,0 +1,26 @@
+<div id="main-container">
+    <div class="login-box">
+        <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="form-group input-size">
+            <input id="password" type="password" class="form-control" placeholder="Password" formControlName="password" required>
+          </div>
+          <br>
+          <div class="form-group input-size">
+            <input id="repassword" type="password" class="form-control" placeholder="Re Enter Password" formControlName="repassword" required>
+          </div>
+          <br><br>
+          <div class="form-group">
+            <button class = "button" type="submit">Change password</button>
+          </div>
+          <br>
+          <div class="form-group" *ngIf = "changeErrorPassNotSame">
+            Password isn't the same!
+          </div>
+          <br>
+          <div class="form-group" *ngIf = "changeInputsNotCompleted">
+            All fields must be completed!
+          </div>
+        </form>
+      </div>
+      
+</div>
